@@ -1,6 +1,4 @@
-# trybe-exercicios
-# Meu repositório de exercícios 
+
+# Meu Portfólio de exercícios #VQV 
 
 
-Eu estou cursando Desenvolvimento Web na Trybe 
-e estou na Seção de fundamentos, mais especificamente em Git e GitHub.
