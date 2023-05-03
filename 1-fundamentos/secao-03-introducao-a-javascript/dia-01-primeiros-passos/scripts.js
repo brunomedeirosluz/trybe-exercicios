@@ -105,9 +105,9 @@
 //     console.log('Peça inválida!!')
 // }
 
-// exercicio 7 
+//exercicio 7 
 
-// let nota = 70;
+// let nota = 95;
 
 // if (nota < 0 || nota > 100){
 //     console.log('ERRO!!!');
@@ -125,4 +125,74 @@
 //     console.log('F');
 // }
 
+
+//exercicio 8 
+
+// let numero1 = 9;
+// let numero2 = 13;
+// let numero3 = 15;
+
+// if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0){
+//     console.log(true);
+// }else {
+//     console.log(false);
+// }
+
+//exercicio 9 
+
+// let numero1 = 10;
+// let numero2 = 12;
+// let numero3 = 15;
+
+// if (numero1 % 2 === 1 || numero2 % 2 === 0 || numero3 % 2 === 0){
+//     console.log(true);
+// }else {
+//     console.log(false);
+// }
+
+//exercicio 10
+
+// let custoProduto = 100;
+// let valorDeVenda = 200;
+
+// if (custoProduto >= 0 && valorDeVenda >=0){
+//     let valorCustoTotal = custoProduto * 1.2;
+//     let lucroTotal = (valorDeVenda - valorCustoTotal) * 1000;
+//     console.log(lucroTotal);
+// }else {
+//     console.log('erro!!');
+//     }
+
+//exercicio 11 
+
+let aliquotaInss; 
+let aliquotaIr;
+
+let salario = 3500.00;
+
+if (salario <= 1566.94){
+    aliquotaInss = salario * 0.08;
+}else if (salario <= 2594.92){
+    aliquotaInss = salario *0.09;
+}else if (salario <= 5189.82){
+    aliquotaInss = salario * 0.11;
+}else {
+    aliquotaInss = 570.88;
+}
+
+let salarioBase = salario - aliquotaInss;
+
+if (salarioBase <= 1903.98){
+    aliquotaIr = 0;
+}else if (salarioBase <= 2826.65){
+    aliquotaIr = (salarioBase * 0.075) - 142.80;
+}else if (salarioBase <= 3751.05){
+    aliquotaIr = (salarioBase * 0.15) - 354.80;
+}else if (salarioBase <= 4664,68){
+    aliquotaIr = (salarioBase * 0.225) - 636.13;
+}else {
+    aliquotaIr = (salarioBase * 0.275) - 869,36;
+}
+
+console.log('Salário: ' + (salarioBase - aliquotaIr));
 
