@@ -163,7 +163,8 @@
 //     console.log('erro!!');
 //     }
 
-//exercicio 11 
+/*exercicio 11 
+*/
 
 let aliquotaInss; 
 let aliquotaIr;
@@ -195,4 +196,3 @@ if (salarioBase <= 1903.98){
 }
 
 console.log('Salário: ' + (salarioBase - aliquotaIr));
-
