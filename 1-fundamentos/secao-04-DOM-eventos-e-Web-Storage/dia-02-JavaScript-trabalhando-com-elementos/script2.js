@@ -1,6 +1,7 @@
 
-const removeTag = document.getElementById('where-are-you');
+const parent = document.getElementById('parent');
+const allChildren = parent.childNodes;
 
-removeTag.removeChild(removeTag.firstElementChild);
+console.log(allChildren);
 
 
