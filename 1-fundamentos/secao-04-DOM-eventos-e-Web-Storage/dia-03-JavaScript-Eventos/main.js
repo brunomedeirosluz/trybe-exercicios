@@ -11,22 +11,23 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando este for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como é possível fazer isso? Dica: Lembre-se do método `.classList.remove`.
 
-const handleChangeTech = (event) => {
-    const techElement = document.querySelector('.tech');
-    techElement.classList.remove('tech');
-    event.target.classList.add('tech');
-    input.value = '';
-  }
-  
-  firstLi.addEventListener('click', handleChangeTech);
-  secondLi.addEventListener('click', handleChangeTech);
-  thirdLi.addEventListener('click', handleChangeTech);
+const idTag = (event) => {
+  const techElement = document.querySelector('.tech');
+  techElement.classList.remove('tech');
+  event.target.classList.add('tech');
+  input.value = '';
+}
 
-  // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
+firstLi.addEventListener('click',idTag);
+secondLi.addEventListener('click',idTag);
+thirdLi.addEventListener('click',idTag);
+
+// 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech'.
+
 input.addEventListener('input', (event) => {
-    const techElement = document.querySelector('.tech');
-    techElement.innerText = event.target.value;
+  const techElement = document.querySelector('.tech');
+  techElement.innerText = event.target.value;
 });
 
 
@@ -34,22 +35,27 @@ input.addEventListener('input', (event) => {
 // redirecione para alguma página.
 // 4.1. Que tal redirecionar para seu portfólio? Dica: Lembre-se dos métodos `window.location.replace` e `window.open`.
 
-myWebpage.addEventListener('click', () => {
-    window.open('https://www.linkedin.com/in/brunodemedeiros95/','_blank');
-  });
-  
+myWebpage.addEventListener('dblclick', () => {
+  window.location.replace('https://blog.betrybe.com/');
+});
+
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo.
 
-
 myWebpage.addEventListener('mouseover', (event) => {
-    event.target.style.color = 'red';
-  });
-  
+  event.target.style.color = 'red';
+});
+
 myWebpage.addEventListener('mouseout', (event) => {
-    event.target.style.color = 'unset';
-  });
+  event.target.style.color = 'unset';
+});
+
+
+
+
+
+
 // Segue abaixo um exemplo de uso do event.target.
 
 const resetText = (event) => {
@@ -60,8 +66,6 @@ const resetText = (event) => {
 }
 
 firstLi.addEventListener('dblclick', resetText);
-secondLi.addEventListener('dblclick', resetText);
-thirdLi.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na função retornará o objeto 'firstLi'.
