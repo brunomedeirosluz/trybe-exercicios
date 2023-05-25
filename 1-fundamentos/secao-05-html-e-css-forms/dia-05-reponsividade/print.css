@@ -1,0 +1,20 @@
+
+#header {
+  display: none;
+}
+
+#navigation {
+  display: none;
+}
+
+#footer {
+    display: none;
+}
+
+#content-container {
+    flex-direction: column;
+}
+
+#aside {
+    margin-top: -20px;
+}
