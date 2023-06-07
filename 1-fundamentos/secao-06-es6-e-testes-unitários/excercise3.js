@@ -17,4 +17,3 @@ const studentRegister = (name, age) => {
     }
   }
 
-  console.log(studentRegister('Bruno',18));
